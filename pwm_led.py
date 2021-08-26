@@ -10,8 +10,8 @@ Have fun!
 """
 
 #### Do not change following 2 lines ####
-import RPi.GPIO
 import time
+import RPi.GPIO as GPIO
 #########################################
 
 
