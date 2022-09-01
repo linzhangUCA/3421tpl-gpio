@@ -7,4 +7,4 @@ Make an LED to repeatedly fade in and fade out. In each cycle, use 2 second to f
 Switching the LED between two modes using the switch button.
 - **LED Mode 1**: fade in and fade out. 2 seconds for fade in, 2 seconds for fade out.
 - **LED Mode 2**: constantly on.
-- Press the button to toggle the modes.
+- Press the button to toggle the mode.
