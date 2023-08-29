@@ -6,11 +6,11 @@ Use 2 second to fade in and 1 second to fade out.
 Hint: PWM
 """
 
-import time
-from gpiozero import PWMLED
+
+from machine import Pin, Timer
+from time import sleep
 
 
-#### Write your code below ####
-# led = PWMLED(2)
+# SETUP
 
-# While Ture:
+# LOOP
