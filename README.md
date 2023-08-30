@@ -8,4 +8,4 @@ Make an LED running under two modes. Use a button to switch the mode.
 - **Mode 1**: fade in and fade out. 2 seconds for fade in, 2 seconds for fade out.
 - **Mode 2**: constantly on.
 - Press (and release) the button to toggle the mode.
-- **Please use an interrupt request**
+- **Please use an interrupt request.**
