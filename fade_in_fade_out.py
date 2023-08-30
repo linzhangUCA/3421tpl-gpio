@@ -7,7 +7,7 @@ Hint: PWM
 """
 
 
-from machine import Pin, Timer
+from machine import Pin, PWM, Timer
 from time import sleep
 
 
