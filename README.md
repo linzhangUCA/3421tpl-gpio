@@ -1,5 +1,8 @@
 # GPIO Practice
+
 ## Instructions:
+Please complete the indicated python scripts in this assignment.
+
 ### 1. (40%) `fade_in_fade_out.py`. 
 Make an LED to repeatedly fade in and fade out. In each cycle, use 2 seconds to fade in, 1 second to fade out.
 
