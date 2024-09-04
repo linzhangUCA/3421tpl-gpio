@@ -6,12 +6,8 @@ Mode 2: constantly on
 Press button to toggle the mode
 """
 
-import time
-from gpiozero import PWMLED, Button
+from machine import Pin, PWM, Timer
 
+# SETUP
 
-#### Write your code below ####
-# led = PWMLED(2)
-# button = Button(26)
-
-# While Ture:
+# LOOP
