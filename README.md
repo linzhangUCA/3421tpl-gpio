@@ -10,6 +10,10 @@ Repeat the process of gradually increasing and decreasing the brightness of an L
 - (10%) Ramp down the brightness of the LED in 1 seconds. 
 - (20%) Repeat previous two steps **forever**.
 
+**Hints**: 
+- To create an increasing sequence: `range(n)`. To create a decreasing sequence: `reversed(range(n))`
+- Maximum PWM duty cycle is `65025`.
+- `for` loop is optional.
 
 ### (60%) [`switch_mode.py`](/switch_mode.py)
 Make an LED running under two modes. Use a button to switch the mode.
@@ -17,9 +21,10 @@ Make an LED running under two modes. Use a button to switch the mode.
 - (8%) **Mode 2**: set the LED to **constantly on**.
 - (20%) Press (and release) the button to switch between the modes. This function is expected to be valid all the time. **DO NOT make it a one-time function.**
 - (20%) Mode switching happens **instantaneously**.
-    
-> **Hint**: an interrupt request could be super helpful.
-> You can either start at **Mode 1** or **Mode 2**.
+
+**Hints**: 
+- use [interrupt](https://www.upesy.com/blogs/tutorials/hardware-interrupts-rpi-pico-on-micropython?srsltid=AfmBOooNL06A7YB1HmKTClu3PhqEixfZSOmMBzPt_Qr6z3RMDosgF3Pl).
+- You can either start with **Mode 1** or **Mode 2**.
  
 ## Further Instructions
 - You can use the built-in LED or an external LED.
