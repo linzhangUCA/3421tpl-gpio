@@ -1,4 +1,5 @@
-# GPIO Practice
+# Raspberry Pi Pico Practice
+In this assignment, you'll practice programming a [Raspberry Pi Pico](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#raspberry-pi-pico-and-pico-h) micro-controller using [MicroPython](https://micropython.org/).
 
 ## Requirements:
 Please complete the two python scripts prepared in this repository. Verify the required functionalities.
@@ -10,7 +11,7 @@ Repeat the process of gradually increasing and decreasing the brightness of an L
 - (10%) Ramp down the brightness of the LED in 1 seconds. 
 - (20%) Repeat previous two steps **forever**.
 
-**Hints**: 
+**Tips**: 
 - To create an increasing sequence: `range(n)`. To create a decreasing sequence: `reversed(range(n))`
 - Maximum PWM duty cycle is `65025`.
 - `for` loop is optional.
@@ -19,11 +20,14 @@ Repeat the process of gradually increasing and decreasing the brightness of an L
 Make an LED running under two modes. Use a button to switch the mode.
 - (12%) **Mode 1**: set the LED to **endlessly** fade in and fade out. Please equally allocate fade-in and fade-out time. Set the frequency to 1/4 Hz.
 - (8%) **Mode 2**: set the LED to **constantly on**.
-- (20%) Press (and release) the button to switch between the modes. This function is expected to be valid all the time. **DO NOT make it a one-time function.**
+- (20%) Press (and release) the button to switch between the modes. This function is expected to be valid all the time. **DO NOT make it a one-time thing**.
 - (20%) Mode switching happens **instantaneously**.
 
-**Hints**: 
-- use [interrupt](https://www.upesy.com/blogs/tutorials/hardware-interrupts-rpi-pico-on-micropython?srsltid=AfmBOooNL06A7YB1HmKTClu3PhqEixfZSOmMBzPt_Qr6z3RMDosgF3Pl).
+**Tips**: 
+- Try to plan actions in a very short period of time (e.g. 10 milliseconds).
+- Try to switch mode with [interrupt](https://www.upesy.com/blogs/tutorials/hardware-interrupts-rpi-pico-on-micropython?srsltid=AfmBOooNL06A7YB1HmKTClu3PhqEixfZSOmMBzPt_Qr6z3RMDosgF3Pl) mechanism.
+- Can't switch mode in irq handling function? You may need help from [global variable](https://www.w3schools.com/python/python_variables_global.asp).
+- Using `for` loop could be a bad choice. 
 - You can either start with **Mode 1** or **Mode 2**.
  
 ## Further Instructions
