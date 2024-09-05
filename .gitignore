@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# micro-pico vscode extension
+.vscode/
+*.micropico
