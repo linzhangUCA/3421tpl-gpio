@@ -6,7 +6,8 @@ Mode 2: constantly on
 Press button to toggle the mode
 """
 
-from machine import Pin, PWM, Timer
+from machine import Pin, PWM
+from time import sleep
 
 # SETUP
 
